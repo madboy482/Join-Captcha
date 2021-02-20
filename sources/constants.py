@@ -40,7 +40,7 @@ CONST = {
     "TOKEN": \
         os_getenv("CAPTCHABOT_TOKEN", SETTINGS["CAPTCHABOT_TOKEN"]),
 
-    # Bot Owner (i.e. "@JoseTLG" or "123456789")
+    # Bot Owner (i.e. "@ProBoy_007" or "123456789")
     "BOT_OWNER": \
         os_getenv("CAPTCHABOT_OWNER", SETTINGS["CAPTCHABOT_OWNER"]),
 
@@ -168,7 +168,7 @@ CONST = {
 
     # Allowed users list usage
     "ALLOWUSERLIST_USAGE": "Command usage (user ID or Alias):\n" \
-        "/allowuserlist add @peter123\n" \
+        "/allowuserlist add @Warning_MadBoy_is_Here\n" \
         "/allowuserlist rm 123456789",
 
     # Allowgroup usage
@@ -222,16 +222,10 @@ CONST = {
         "\nUkrainian / Українську\n/language uk\n",
 
     # Bot developer
-    "DEVELOPER": "@JoseTLG",
+    "DEVELOPER": "@ProBoy_007",
 
     # Bot code repository
-    "REPOSITORY": "https://github.com/J-Rios/TLG_JoinCaptchaBot",
-
-    # Developer Paypal address
-    "DEV_PAYPAL": "https://www.buymeacoffee.com/joincaptchabot",
-
-    # Developer Bitcoin address
-    "DEV_BTC": "3N9wf3FunR6YNXonquBeWammaBZVzTXTyR",
+    "REPOSITORY": "https://github.com/madboy482/Join-Captcha",
 
     # Bot version
     "VERSION": "1.17.0 (13/02/2021)"
