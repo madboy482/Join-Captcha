@@ -1,7 +1,7 @@
 # Docker configuration
 
 This document lists the requirements and steps to run
-[TLG_JoinCaptchaBot](https://github.com/J-Rios/TLG_JoinCaptchaBot) in a docker
+<b><i>[Join Captcha](https://github.com/madboy482/Join-Captcha)</i></b> in a docker
 container.
 
 ## Pre-requisites
@@ -14,7 +14,7 @@ container.
 
 ## Building a new image
 
-Create a new bot on Telegram using [The BotFather](http://t.me/BotFather). Make
+Create a new bot on Telegram using <b>[The BotFather](http://telegram.me/BotFather)</b>. Make
 sure your bot can be invited to channels and has privacy set to _disabled_.
 Without this, the bot won't be able to read messages on the channel.
 
