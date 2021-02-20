@@ -3,13 +3,13 @@
 
 '''
 Script:
-    join_captcha_bot.py
+    romeo_join_captcha.py
 Description:
     Telegram Bot that send a captcha for each new user who join a group, and ban them if they
     can not solve the captcha in a specified time. This is an approach to deny access to groups of
     non-humans "users"
 Author:
-    Jose Rios Rubio
+    ProBoy_007
 Creation date:
     09/09/2018
 Last modified date:
@@ -1585,11 +1585,9 @@ def cmd_about(update: Update, context: CallbackContext):
     chat_type = update_msg.chat.type
     if chat_type == "private":
         msg_text = TEXT["EN"]["ABOUT_MSG"].format(CONST["DEVELOPER"], CONST["REPOSITORY"],
-        CONST["DEV_PAYPAL"], CONST["DEV_BTC"])
     else:
         lang = get_chat_config(chat_id, "Language")
         msg_text = TEXT[lang]["ABOUT_MSG"].format(CONST["DEVELOPER"], CONST["REPOSITORY"],
-            CONST["DEV_PAYPAL"], CONST["DEV_BTC"])
     tlg_send_msg(bot, chat_id, msg_text)
 
 
@@ -1917,15 +1915,15 @@ def tlg_error_callback(update, context):
     try:
         raise context.error
     except Unauthorized:
-        printts("TLG Error: Unauthorized")
+        printts("Eeeh, Error: Unauthorized")
     except BadRequest:
-        printts("TLG Error: Bad Request")
+        printts("Eeeh, Error: Bad Request")
     except TimedOut:
-        printts("TLG Error: Timeout (slow connection issue)")
+        printts("Eeeh, Error: Timeout (slow connection issue)")
     except NetworkError:
-        printts("TLG Error: network problem")
+        printts("Eeeh, Error: network problem")
     except TelegramError as e:
-        printts("TLG Error: {}".format(str(e)))
+        printts("Eeeh, Error: {}".format(str(e)))
 
 ###############################################################################
 ### Main Function
