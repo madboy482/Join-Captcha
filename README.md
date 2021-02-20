@@ -1,4 +1,6 @@
-## Romeo_Join_Captcha
+![Romeo Join Captcha](https://telegra.ph/file/929a3cffe8935f0a445e6.jpg)
+
+## Romeo Join Captcha
 
 Bot to verify if a new user, who joins a group, is a human.
 The Bot sends an image captcha for each new user, and kicks any of them that can't solve the captcha in a specified amount of time. Also, any message that contains an URL sent by a new "user" before captcha completion will be considered Spam and will be deleted.
