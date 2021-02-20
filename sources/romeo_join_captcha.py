@@ -7,7 +7,7 @@ Script:
 Description:
     Telegram Bot that send a captcha for each new user who join a group, and ban them if they
     can not solve the captcha in a specified time. This is an approach to deny access to groups of
-    non-humans "users"
+    non-humans "users".
 Author:
     ProBoy_007
 Creation date:
