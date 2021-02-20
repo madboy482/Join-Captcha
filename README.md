@@ -1,20 +1,8 @@
-# TLG_JoinCaptchaBot
+## Romeo_Join_Captcha
 
 Bot to verify if a new user, who joins a group, is a human.
 The Bot sends an image captcha for each new user, and kicks any of them that can't solve the captcha in a specified amount of time. Also, any message that contains an URL sent by a new "user" before captcha completion will be considered Spam and will be deleted.
 
-## Donate
-
-Do you like this Bot? Buy me a coffee :)
-
-BuyMeACoffee:
-[https://www.buymeacoffee.com/joincaptchabot](https://www.buymeacoffee.com/joincaptchabot)
-
-Paypal:
-[https://www.paypal.me/josrios](https://www.paypal.me/josrios)
-
-BTC:
-3N9wf3FunR6YNXonquBeWammaBZVzTXTyR
 
 ## Installation
 
@@ -31,14 +19,14 @@ To generate Captchas, the Bot uses [multicolor_captcha_generator library](https:
 2. Get the project and install JoinCaptchaBot requirements:
 
     ```bash
-    git clone https://github.com/J-Rios/TLG_JoinCaptchaBot
+    git clone https://github.com/madboy482/Join-Captcha
     pip install -r TLG_JoinCaptchaBot/requirements.txt
     ```
 
 3. Go to project sources and give execution permission to usage scripts:
 
     ```bash
-    cd TLG_JoinCaptchaBot/sources
+    cd Join-Captcha/sources
     chmod +x run status kill
     ```
 
@@ -114,7 +102,7 @@ The **Bot Owner** can run special commands that no one else can use, like /allow
 You can setup a Bot Owner by specifying the Telegram User ID or Alias in "settings.py" file:
 
 ```python
-"BOT_OWNER": "@JoseTLG",
+"BOT_OWNER": "@ProBoy_007",
 ```
 
 ## Make Bot Private
@@ -168,7 +156,7 @@ To add support for a new language you must follow this steps:
 
 1. Fork the project repository, clone it and create a new branch to work on it (i.e. named language-support-en).
 
-2. Copy from one of the existing language JSON files from [here](https://github.com/J-Rios/TLG_JoinCaptchaBot/tree/master/sources/language) to a new one.
+2. Copy from one of the existing language JSON files from [HERE](https://github.com/madboy482/Join-Captcha/tree/master/sources/language) to a new one.
 
 3. Change the name of that file for the language ISO Code of the language that you want.
 
@@ -176,7 +164,7 @@ To add support for a new language you must follow this steps:
 
 5. Make a pull request of that branch with the new language file into this repository and wait for it to be accepted.
 
-6. Then, I will make the integration into source code and actual Bot account (@join_captcha_bot).
+6. Then, I will make the integration into source code and actual Bot account (@Romeo1_CaptchaBot).
 
 7. Enjoy the new language :)
 
