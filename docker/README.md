@@ -6,7 +6,7 @@ container.
 
 ## Pre-requisites
 
-* [docker](https://www.docker.com/products/docker-engine). If possible, install
+* [Docker](https://www.docker.com/products/docker-engine). If possible, install
   it using your OS native packaging system (under Debian based systems, use
   `apt-get install docker-ce`).
 
