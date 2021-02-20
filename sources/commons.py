@@ -6,7 +6,7 @@ Script:
 Description:
     Useful auxiliar commons functions.
 Author:
-    Jose Rios Rubio
+    ProBoy_007
 Creation date:
     02/11/2020
 Last modified date:
