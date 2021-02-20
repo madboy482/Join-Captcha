@@ -4,9 +4,9 @@
 Script:
     constants.py
 Description:
-    Constants values for join_captcha_bot.py
+    Constants values for romeo_join_captcha.py
 Author:
-    Jose Rios Rubio
+    ProBoy_007
 Creation date:
     09/09/2018
 Last modified date:
