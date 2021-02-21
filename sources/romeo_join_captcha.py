@@ -1584,11 +1584,11 @@ def cmd_about(update: Update, context: CallbackContext):
     chat_id = update_msg.chat_id
     chat_type = update_msg.chat.type
     if chat_type == "private":
-        msg_text = <b>This Bot is free software and open-sourced under the GNU-GPL license.\n<i>Bot Developed</i> by <i>@ProBoy_007</i>.\n\nYou can check the <i>Source Code</i> here:\n<i>https://github.com/madboy483/Join-Captcha</i>.</b>
+        msg_text = (<b>This Bot is free software and open-sourced under the GNU-GPL license.\n<i>Bot Developed</i> by <i>@ProBoy_007</i>.\n\nYou can check the <i>Source Code</i> here:\n<i>https://github.com/madboy483/Join-Captcha</i>.</b>)
 
     else:
         lang = get_chat_config(chat_id, "Language")
-        msg_text = <b>This Bot is free software and open-sourced under the GNU-GPL license.</b>[lang]Bot Developed</i> by <i>@ProBoy_007</i>.\n\nYou can check the <i>Source Code</i> here:\n<i>https://github.com/madboy483/Join-Captcha</i>.</b>
+        msg_text = (<b>This Bot is free software and open-sourced under the GNU-GPL license.</b>[lang]Bot Developed</i> by <i>@ProBoy_007</i>.\n\nYou can check the <i>Source Code</i> here:\n<i>https://github.com/madboy483/Join-Captcha</i>.</b>)
     tlg_send_msg(bot, chat_id, msg_text)
 
 
