@@ -1584,12 +1584,10 @@ def cmd_about(update: Update, context: CallbackContext):
     chat_id = update_msg.chat_id
     chat_type = update_msg.chat.type
     if chat_type == "private":
-        msg_text = TEXT["EN"]["ABOUT_MSG"].format(CONST["DEVELOPER"], CONST["REPOSITORY"],
-        CONST["DEV_PAYPAL"], CONST["DEV_BTC"])
+        msg_text = TEXT["EN"]["ABOUT_MSG"].format(CONST["DEVELOPER"], CONST["REPOSITORY"])
     else:
         lang = get_chat_config(chat_id, "Language")
-        msg_text = TEXT[lang]["ABOUT_MSG"].format(CONST["DEVELOPER"], CONST["REPOSITORY"],
-            CONST["DEV_PAYPAL"], CONST["DEV_BTC"])
+        msg_text = TEXT[lang]["ABOUT_MSG"].format(CONST["DEVELOPER"], CONST["REPOSITORY"])
     tlg_send_msg(bot, chat_id, msg_text)
 
 
