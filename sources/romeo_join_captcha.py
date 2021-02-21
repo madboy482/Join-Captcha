@@ -1584,11 +1584,11 @@ def cmd_about(update: Update, context: CallbackContext):
     chat_id = update_msg.chat_id
     chat_type = update_msg.chat.type
     if chat_type == "private":
-        tlg_send_msg(bot, chat_id, <b>This Bot is free software and open-sourced under the GNU-GPL license.\n<i>Bot Developed</i> by <i>@ProBoy_007</i>.\n\nYou can check the <i>Source Code</i> here:\n<i>https://github.com/madboy483/Join-Captcha</i>.</b>)["EN"])
-
+        msg_text = TEXT["EN"]["ABOUT_MSG"].format(CONST["DEVELOPER"], CONST["REPOSITORY"],
     else:
         lang = get_chat_config(chat_id, "Language")
-        tlg_send_msg(bot, chat_id, <b>This Bot is free software and open-sourced under the GNU-GPL license.\n<i>Bot Developed</i> by <i>@ProBoy_007</i>.\n\nYou can check the <i>Source Code</i> here:\n<i>https://github.com/madboy483/Join-Captcha</i>.</b>)["EN"])
+        msg_text = TEXT[lang]["ABOUT_MSG"].format(CONST["DEVELOPER"], CONST["REPOSITORY"],
+    tlg_send_msg(bot, chat_id, msg_text)
 
 
 def cmd_captcha(update: Update, context: CallbackContext):
