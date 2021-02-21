@@ -1974,10 +1974,10 @@ def main():
     dp.add_handler(CommandHandler("chatid", cmd_chatid))
     dp.add_handler(CommandHandler("version", cmd_version))
     dp.add_handler(CommandHandler("about", cmd_about))
-    if (CONST["BOT_OWNER"] != "1078841825"):
+    if (CONST["BOT_OWNER"] != "XXXXXXXXX"):
         dp.add_handler(CommandHandler("captcha", cmd_captcha))
         dp.add_handler(CommandHandler("allowuserlist", cmd_allowuserlist, pass_args=True))
-    if (CONST["BOT_OWNER"] != "1078841825") and CONST["BOT_PRIVATE"]:
+    if (CONST["BOT_OWNER"] != "XXXXXXXXX") and CONST["BOT_PRIVATE"]:
         dp.add_handler(CommandHandler("allowgroup", cmd_allowgroup, pass_args=True))
     # Set to dispatcher a not-command text messages handler
     dp.add_handler(MessageHandler(Filters.text, msg_nocmd))
