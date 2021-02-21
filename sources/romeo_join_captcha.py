@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+https://github.com/hacker485/TLG_JoinCaptchaBot/blob/master/sources/ultramax_captcha_bot.py#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 '''
